@@ -13,7 +13,10 @@
     --grey: #f5f5f5;
     --black1: #222;
     --black2: #999;
-
+    --coldelivered: rgb(120, 235, 85);
+    --colpending: rgb(238, 149, 46);
+    --colreturned: rgb(212, 77, 77);
+    --colinprogress: rgb(104, 116, 228);
 }
 
 body{
@@ -355,7 +358,7 @@ body{
 
 .status.delivered{
     padding: 4px 8px;
-    background: green;
+    background: var(--coldelivered);
     color: var(--white);
     border-radius: 4px;
     font-size: 14;
@@ -364,7 +367,7 @@ body{
 
 .status.pending{
     padding: 4px 8px;
-    background: orange;
+    background: var(--colpending);
     color: var(--white);
     border-radius: 4px;
     font-size: 14;
@@ -373,7 +376,7 @@ body{
 
 .status.inprogress{
     padding: 4px 8px;
-    background: lightblue;
+    background: var(--colinprogress);
     color: var(--white);
     border-radius: 4px;
     font-size: 14;
@@ -382,7 +385,7 @@ body{
 
 .status.return{
     padding: 4px 8px;
-    background: red;
+    background: var(--colreturned);
     color: var(--white);
     border-radius: 4px;
     font-size: 14;
